@@ -40,7 +40,7 @@ public class AdminService {
         String firstName=(String) blogData.get("firstName");
         String lastName=(String) blogData.get("lastName");
         String userName=(String) blogData.get("userName");
-        String mobile=(String) blogData.get("mobile");
+        String mobile=(String) blogData.get("number");
         String email=(String) blogData.get("email");
         String password=(String) blogData.get("password");
         String skills=(String) blogData.get("skills");

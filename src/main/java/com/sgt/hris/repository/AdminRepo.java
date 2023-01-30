@@ -35,6 +35,6 @@ public class AdminRepo {
         return this.jdbcTemplate.queryForMap("exec hr.sp_getjobAspirant ?",id);
     }
     public void insertAspirant(String firstName,String lastName,String userName,String mobile,String email,String password,String skills,Integer deparment,Integer role){
-        this.jdbcTemplate.update("EXEC blog.sp_addPost ?,?,?,?,?,?,?,?,?",firstName,lastName,userName,mobile,email,password,skills,deparment,role);
+        this.jdbcTemplate.update("EXEC [hr].[sp_registerUser] ?,?,?,?,?,?,?,?,?",firstName,lastName,userName,mobile,email,password,skills,deparment,role);
     }
 }
